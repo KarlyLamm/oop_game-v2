@@ -50,7 +50,12 @@ h2 {
 }
 
 h1 {
-  font-size: 30px;
+  font-size: 40px;
+  color: red;
+  font-family: 'Creepster', cursive;
+  padding: 3rem;
+  text-align: center;
+  font-size: 3rem;
 }
 
 button {
@@ -196,7 +201,7 @@ button {
 }
 
 .win {
-  background-color: var(--color-win);
+  background-image: url('https://iamtalkytina.com/wp-content/uploads/2013/05/NickHead.gif');
 }
 
 .win a {
@@ -204,7 +209,7 @@ button {
 }
 
 .lose {
-  background-color: #f5785f;
+  background-image: url('https://i.pinimg.com/originals/92/e8/2e/92e82ec440477779fcc2b95d322a7892.png');
 }
 
 .lose a {
