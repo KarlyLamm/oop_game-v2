@@ -43,6 +43,7 @@ h2 {
  
   color: #c5c5ff;
   font-family: 'Creepster', cursive;
+  
   padding: 3rem;
   text-align: center;
   font-size: 3rem;
@@ -51,7 +52,8 @@ h2 {
 
 h1 {
   font-size: 40px;
-  color: red;
+  color:black;
+  text-shadow: bisque;
   font-family: 'Creepster', cursive;
   padding: 3rem;
   text-align: center;
@@ -133,7 +135,8 @@ button {
   margin-right: 2px;
   border-radius: 5px;
   -webkit-animation-duration: .5s;
-  animation-duration: .5s;
+  animation-duration: .5s; 
+ 
 }
 
 

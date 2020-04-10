@@ -93,12 +93,10 @@ removeLife() {
 
 gameOver(gameWon) {
     document.getElementById("overlay").style.display = "";
-    alert(`Correct answer: ${game.activePhrase.phrase}`);
-
-    if (gameWon) {
+        if (gameWon) {
         document.getElementById(
             "game-over-message"
-        ).innerHTML = `It has been decided in your favor...You Won!`;
+        ).innerHTML = `It has been decided in your favor...You Won! Phrase: ${game.activePhrase.phrase}`;
         document.getElementById("overlay").classList.add(
             "win"
         );
@@ -111,8 +109,7 @@ gameOver(gameWon) {
     } else {
         document.getElementById(
             "game-over-message"
-        ).innerHTML = `You are OBSOLETE.....You lost!`
-        `Correct answer: ${game.activePhrase.phrase}`;
+        ).innerHTML = `You are OBSOLETE.....You lost! Correct answer: ${game.activePhrase.phrase}`;
         document.getElementById("overlay").classList.add(
             "lose"
         );
