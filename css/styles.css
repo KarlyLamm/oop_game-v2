@@ -39,7 +39,14 @@ h2 {
   margin: 0;
   text-transform: uppercase;
   font-size: var(--font-size-large);
-  margin: 0;
+  margin: 5rem;
+ 
+  color: #c5c5ff;
+  font-family: 'Creepster', cursive;
+  padding: 3rem;
+  text-align: center;
+  font-size: 3rem;
+  margin-bottom: 1rem;
 }
 
 h1 {

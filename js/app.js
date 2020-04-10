@@ -37,3 +37,23 @@ document.getElementById("btn__reset").addEventListener("click", function (
 	game.startGame();
 });
 // hides overlay after clicking button
+// add key listeners
+const keys = document.getElementsByClassName("key");
+for (var i = 0; i < keys.length; i++) {
+	keys[i].addEventListener("click", function (event) {
+		const letterSelected = event.target.innerText;
+		game.handleInteraction(letterSelected);
+	});
+}
+// add key press listeners
+// pressing a physical keyboard button results in the handleInteraction() 
+// method being called for the associated onscreen keyboard button
+document.onkeypress = function (e) {
+	e = e || window.event;
+	// use e.keyCode
+	console.log(e.key);
+	let letterOnly = e.key.match(/[a-zA-Z]/i) || [null];
+	// console.log(letterOnly)
+	// console.log(letterOnly[0])
+	game.handleInteraction(letterOnly[0]);
+};
