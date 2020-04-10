@@ -17,10 +17,10 @@
     }
     createPhrases(){
         this.phrases[0]= new Phrase("the shadows that were about to watch could be our journey");
-        this.phrases[0]= new Phrase("Picture of a woman looking at a picture");
-        this.phrases[0]= new Phrase("It can happen in the Twilight Zone");
-        this.phrases[0]= new Phrase("Every man is put on earth condemned to die");
-        this.phrases[0]= new Phrase("Express elevator to the ninth floor of a department store");
+        this.phrases[1]= new Phrase("Picture of a woman looking at a picture");
+        this.phrases[2]= new Phrase("It can happen in the Twilight Zone");
+        this.phrases[3]= new Phrase("Every man is put on earth condemned to die");
+        this.phrases[4]= new Phrase("Express elevator to the ninth floor of a department store");
     }
 	getRandomPhrase() {
 		const randomIndex = Math.floor(
