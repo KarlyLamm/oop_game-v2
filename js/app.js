@@ -25,7 +25,15 @@
 // const phrase = new Phrase(randomPhrase.phrase);
 // phrase.addPhraseToDisplay();
 // test for active phrase printed in console and startscreen overlay hidden
-const game = new Game();
-game.startGame();
-console.log(`Active Phrase - phrase: ${game.activePhrase.phrase}`);
+// const game = new Game();
+// game.startGame();
+// console.log(`Active Phrase - phrase: ${game.activePhrase.phrase}`);
 //-------TEST CODE AREA----------------
+var game;
+document.getElementById("btn__reset").addEventListener("click", function (
+	event
+) {
+	game = new Game();
+	game.startGame();
+});
+// hides overlay after clicking button

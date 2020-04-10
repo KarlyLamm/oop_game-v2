@@ -11,30 +11,23 @@
  class Game{
     constructor(){
         this.missed=0;
-        this.phrases=[
-            {
-                phrase:"the shadows that were about to watch could be our journey"
-            },
-            {
-                phrase:"Picture of a woman looking at a picture"
-            },
-            {
-                phrase: "It can happen in the Twilight Zone"
-            },
-            {
-                phrase: "Every man is put on earth condemned to die"
-            },
-            {
-                phrase:"Express elevator to the ninth floor of a department store"
-            }
-        ];
+        this.phrases=[];
+        this.createPhrases();
         this.activePhrase=null;
     }
-   getRandomPhrase(){
-    let ranNumber=Math.floor(Math.random()*this.phrases.length);
-    let randomPhrase=this.phrases[ranNumber]
-    return randomPhrase;
-   }
+    createPhrases(){
+        this.phrases[0]= new Phrase("the shadows that were about to watch could be our journey");
+        this.phrases[0]= new Phrase("Picture of a woman looking at a picture");
+        this.phrases[0]= new Phrase("It can happen in the Twilight Zone");
+        this.phrases[0]= new Phrase("Every man is put on earth condemned to die");
+        this.phrases[0]= new Phrase("Express elevator to the ninth floor of a department store");
+    }
+	getRandomPhrase() {
+		const randomIndex = Math.floor(
+			Math.random() * Math.floor(this.phrases.length)
+		);
+		return this.phrases[randomIndex];
+	}
    //getRandomPhrase grabs random index from phrases and assigns it to the string
    startGame() {
     document.getElementById("overlay").style.display = "none";
