@@ -27,7 +27,8 @@
 			Math.random() * Math.floor(this.phrases.length)
 		);
 		return this.phrases[randomIndex];
-	}
+    }
+    
    //getRandomPhrase grabs random index from phrases and assigns it to the string
    startGame() {
     document.getElementById("overlay").style.display = "none";
