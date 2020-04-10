@@ -32,7 +32,7 @@
 		);
 		return this.phrases[randomIndex];
     }
-    
+   
    //getRandomPhrase grabs random index from phrases and assigns it to the string
    startGame() {
     document.getElementById("overlay").style.display = "none";
@@ -93,6 +93,7 @@ removeLife() {
 
 gameOver(gameWon) {
     document.getElementById("overlay").style.display = "";
+    alert(`Correct answer: ${game.activePhrase.phrase}`);
 
     if (gameWon) {
         document.getElementById(
@@ -110,7 +111,8 @@ gameOver(gameWon) {
     } else {
         document.getElementById(
             "game-over-message"
-        ).innerHTML = `You are OBSOLETE.....You lost`;
+        ).innerHTML = `You are OBSOLETE.....You lost!`
+        `Correct answer: ${game.activePhrase.phrase}`;
         document.getElementById("overlay").classList.add(
             "lose"
         );
@@ -122,7 +124,7 @@ gameOver(gameWon) {
         ).classList.remove("start");
     }
 
-    this.cleanUp();
+    this.cleanUp()
 }
 
 cleanUp() {
@@ -148,6 +150,7 @@ cleanUp() {
 
     this.missed = 0;
 }
+
 }
 
 //  const game = new Game()
