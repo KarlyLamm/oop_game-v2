@@ -21,6 +21,10 @@
         this.phrases[2]= new Phrase("It can happen in the Twilight Zone");
         this.phrases[3]= new Phrase("Every man is put on earth condemned to die");
         this.phrases[4]= new Phrase("Express elevator to the ninth floor of a department store");
+        this.phrases[5]= new Phrase("my name is talky tina");
+        this.phrases[6]= new Phrase("its a cookbook");
+        this.phrases[7]= new Phrase("theres a man out there");
+        this.phrases[8]= new Phrase("i believe youre going my way");
     }
 	getRandomPhrase() {
 		const randomIndex = Math.floor(
@@ -93,7 +97,7 @@ gameOver(gameWon) {
     if (gameWon) {
         document.getElementById(
             "game-over-message"
-        ).innerHTML = "You won!";
+        ).innerHTML = `It has been decided in your favor...You Won!`;
         document.getElementById("overlay").classList.add(
             "win"
         );
@@ -106,7 +110,7 @@ gameOver(gameWon) {
     } else {
         document.getElementById(
             "game-over-message"
-        ).innerHTML = "You lost!";
+        ).innerHTML = `You are OBSOLETE.....You lost`;
         document.getElementById("overlay").classList.add(
             "lose"
         );
