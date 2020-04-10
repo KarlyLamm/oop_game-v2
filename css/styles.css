@@ -220,3 +220,6 @@ button {
 button:hover{
 transform: scale(1.2);
 }
+.imagination:hover{
+  transform: scale(2)rotate(35deg);
+}
